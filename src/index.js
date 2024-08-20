@@ -104,40 +104,4 @@ restaurantName.addEventListener('click', openHome);
 homeButton.addEventListener('click', openHome);
 menuButton.addEventListener('click', () => {
     openMenu(specialOffers);
-
-    const barButtons = document.querySelectorAll('.bar button');
-    barButtons.forEach(button => {
-        button.addEventListener('click', () => {
-
-            switch (button.textContent) {
-                case 'Special Offers':
-                    openMenu(specialOffers);
-                    break;
-                case 'Fast Food':
-                    openMenu(fastFood);
-                    break;
-                case 'Casual and Fine Dining':
-                    openMenu(casualAndFineDining);
-                    break;
-                case 'Seafood':
-                    openMenu(seaFood);
-                    break;
-                case 'Vegan and Vegetarian':
-                    openMenu(veganAndVegetarian);
-                    break;
-                case 'Barbecue':
-                    openMenu(barbecue);
-                    break;
-                case 'Cafe':
-                    openMenu(cafe);
-                    break;
-                case 'Pastry':
-                    openMenu(pastry);
-                    break;
-                case 'Ethnic Cuisine':
-                    openMenu(ethnicCuisine);
-                    break;
-            };
-        });
-    });
 });
