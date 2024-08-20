@@ -1,0 +1,279 @@
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+
+    width: 100%;
+    height: 80vh;
+
+    background-image: url("../images/home/image_container/home.JPG");
+    background-size: cover;
+}
+
+.title-card {
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.order {
+    align-self: center;
+    aspect-ratio: 5 / 1;
+    height: 40px;
+    width: auto;
+
+    cursor: var(--button-pointer);
+    background-color: var(--orange-button-color);
+    font-weight: bold;
+    font-size: 16px;
+
+    border: 0;
+    border-radius: 25px;
+}
+
+.order:hover {
+    background-color: var(--hover-orange-button-color);
+    transition: 0.1s;
+}
+
+.order:active {
+    background-color: var(--active-orange-button-color);
+    transition: 0s;
+}
+
+.discover {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: var(--page-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.discover > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+    font-size: 56px;
+}
+
+.discoveries {
+    padding: 30px;
+    width: 100%;
+    height: 300px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.discoveries > button {
+    cursor: var(--button-pointer);
+    border: 0;
+    border-radius: 10px;
+
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.locations {
+    background-image: url("../images/home/discover/locations.JPG");
+    background-position: 80% 20% !important;
+}
+
+.videos {
+    background-image: url("../images/home/discover/videos.jpg");
+}
+
+.news {
+    background-image: url("../images/home/discover/news.jpg");
+}
+
+.podcasts {
+    background-image: url("../images/home/discover/podcasts.jpg");
+}
+
+.careers {
+    background-image: url("../images/home/discover/careers.JPG");
+}
+
+.programs {
+    background-image: url("../images/home/discover/programs.jpg");
+}
+
+.statistics {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.statistics > p {
+    color: var(--orange-button-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+    font-size: 56px;
+}
+
+.insights {
+    width: 100%;
+    height: 300px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.insights > div {
+    height: 100%;
+}
+
+.insights > .image {
+    flex: 1;
+    background-image: url("../images/home/statistics/lasagna.jpg");
+    background-size: cover;
+    background-position: 70%;
+
+    border: 0;
+    border-radius: 25px;
+}
+
+.data {
+    flex: 2;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    color: white;
+}
+
+.data > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data > div > div {
+    flex: 1;
+}
+
+.data > div > div:first-child {
+    background-color: white;
+    background-size: cover;
+}
+
+.data > div > div:nth-child(odd) {
+    aspect-ratio: 1 / 1;
+    width: auto;
+    border: 0;
+    border-radius: 50px;
+}
+
+.places {
+    background-image: url("../images/home/statistics/places.png");
+}
+
+.employees {
+    background-image: url("../images/home/statistics/employees.png");
+}
+
+.chicken {
+    background-image: url("../images/home/statistics/chicken.png");
+}
+
+.beans {
+    background-image: url("../images/home/statistics/beans.png");
+}
+
+.seafood {
+    background-image: url("../images/home/statistics/seafood.png");
+}
+
+.sandwiches {
+    background-image: url("../images/home/statistics/sandwiches.png");
+}
+
+.latte {
+    background-image: url("../images/home/statistics/latte.png");
+}
+
+.growth {
+    background-image: url("../images/home/statistics/growth.png");
+}
+
+.info {
+    text-align: center;
+}
+
+.info > p:first-child {
+    font-weight: 1000;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.app-information {
+    flex: 5;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: var(--page-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app-information > p:first-child {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+    font-size: 56px;
+}
+
+.app-information > p:last-child {
+    text-align: justify;
+}
+
+.app-image {
+    flex: 3;
+    padding: 30px;
+}
+
+.app-image > .image {
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/home/app/drool.png");
+    background-size: cover;
+    background-position: center;
+}
