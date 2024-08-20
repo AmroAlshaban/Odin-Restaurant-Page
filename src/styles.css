@@ -1,7 +1,211 @@
+:root {
+    --page-color: rgb(216, 216, 216);
+    --nav-button-color: rgb(0, 0, 0);
+    --hover-nav-button-color: rgb(60, 60, 60);
+    --hover-white-button-color: rgb(208, 208, 208);
+    --hover-transition: 0.1s;
+    --active-nav-button-color: rgb(86, 86, 86);
+    --active-white-button-color: rgb(173, 173, 173);
+    --active-transition: 0s;
+    --orange-button-color: rgb(255, 213, 0);
+    --hover-orange-button-color: rgb(225, 172, 0);
+    --active-orange-button-color: rgb(170, 130, 0);
+    --button-pointer: pointer;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: 0;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+
+html, body {
+    min-width: 1200px;
+    background-color: var(--page-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+
+    position: sticky;
+    top: 0%;
+
+    background-color: black;
+    color: white;
+    z-index: 2;
+}
+
+#restaurant-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+
+    cursor: var(--button-pointer);
+    background-color: black;
+    color: white;
+    font-size: 36px;
+    font-weight: 1000;
+    font-family: cursive;
+
+    border: 0;
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    width: 25%;
+}
+
+header > nav > button {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    width: auto;
+    border: 0;
+    cursor: var(--button-pointer);
+
+    background-color: var(--nav-button-color);
+    color: white;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    font-style: italic;
+}
+
+header > nav > button:hover {
+    background-color: var(--hover-nav-button-color);
+    transition: var(--hover-transition);
+}
+
+header > nav > button:active {
+    background-color: var(--active-nav-button-color);
+    transition: var(--active-transition);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100px;
+
+    background-color: gray;
+
+}
+
+footer > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    gap: 30px;
+    height: 30%;
+}
+
+footer > nav > button {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    width: auto;
+
+    cursor: var(--button-pointer);
+    background-color: gray;
+    border: 0;
+}
+
+.instagram {
+    background-image: url("./images/instagram.svg");
+    background-size: cover;
+}
+
+.youtube {
+    background-image: url("./images/youtube.svg");
+    background-size: cover;
+}
+
+.x {
+    background-image: url("./images/x.svg");
+    background-size: cover;
+}
+
+.facebook {
+    background-image: url("./images/facebook.svg");
+    background-size: cover;
+}
+
+.tiktok {
+    background-image: url("./images/tiktok.svg");
+    background-size: cover;
+}
+
+.copyright {
+    font-weight: bold;
+}
+
+.auth-buttons {
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width: 25%;
+}
+
+.auth-buttons > * {
+    aspect-ratio: 2 / 1;
+    height: 75%;
+    width: auto;
+}
+
+.auth-buttons > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 1000;
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.auth-buttons > button {
+    cursor: var(--button-pointer);
+    background-color: var(--orange-button-color);
+    color: black;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    border: 0;
+    border-radius: 25px;
+}
+
+.auth-buttons > button:hover {
+    background-color: var(--hover-orange-button-color);
+    transition: var(--hover-transition);
+}
+
+.auth-buttons > button:active {
+    background-color: var(--active-orange-button-color);
+    transition: var(--active-transition);
+}
+
+#content {
+    flex: 1;
+}
+
+/* --------------------------------- */
