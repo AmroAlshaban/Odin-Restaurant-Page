@@ -12,7 +12,7 @@ This project is still incomplete, but it is a long term project that will be com
 
 ## Demo
 
-Check the demo [here](https://mathoverse100.github.io/Odin-Restaurant-Page/).
+Check the demo [here](https://amroalshaban.github.io/Odin-Restaurant-Page/).
 
 ## Screenshots
 
